@@ -1,0 +1,308 @@
+/* global */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-weight: 700;
+    font-family: 'Lato', sans-serif;
+    background-image: linear-gradient(to bottom, rgb(36, 150, 136) 0, rgb(36, 150, 136) 15vh, rgb(215, 219, 215) 15vh, rgb(215, 219, 215) 100vh);
+}
+
+
+/* class reuse */
+
+.list-inline {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.font-w-4 {
+    font-weight: 400;
+    font-size: 14px;
+    color: rgb(79, 116, 133);
+}
+
+
+/* container */
+
+.container {
+    width: 80%;
+    min-width: 900px;
+    height: 95%;
+    margin-bottom: 30px 0;
+}
+
+.container aside,
+.container main {
+    float: left;
+    height: 100%;
+}
+
+
+/* aside */
+
+.container aside {
+    width: 35%;
+    height: 100%;
+    background-color: rgb(250, 250, 250);
+}
+
+
+/* aside header */
+
+aside header {
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    padding: 10px;
+    background-color: rgb(234, 234, 234);
+}
+
+aside header ul li img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+
+/* aside header icons */
+
+aside header ul li .fas {
+    margin: 0 10px;
+    font-size: 20px;
+    color: rgb(177, 177, 177);
+}
+
+
+/* aside section */
+
+.aside-section-first {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(142, 218, 252);
+}
+
+
+/* aside section first / aside section first left  */
+
+.aside-section-first .left {
+    width: 20%;
+    padding: 15px;
+}
+
+.aside-section-first .left .fas {
+    font-size: 23px;
+    padding: 13px 10px;
+    border-radius: 50%;
+    color: rgb(142, 218, 252);
+    background-color: white;
+}
+
+
+/* aside section first right */
+
+.aside-section-first .right {
+    width: 80%;
+}
+
+.aside-section-first .right ul li {
+    list-style: none;
+}
+
+
+/* aside nav */
+
+aside nav {
+    display: flex;
+    margin: 7px;
+    padding: 5px 5px 5px 25px;
+    background-color: white;
+}
+
+aside nav div {
+    color: gray;
+    padding-right: 25px;
+}
+
+aside nav input {
+    width: 100%;
+    border: none;
+}
+
+
+/* aside section second */
+
+.aside-section-second {
+    height: calc(100% - 189px);
+    margin-right: 10px;
+    box-shadow: 2px 0 rgba(0, 0, 0, .1);
+}
+
+.aside-section-second .new-chat {
+    display: flex;
+    padding: 10px 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+
+.aside-section-second .new-chat:hover {
+    background-color: rgb(234, 234, 234);
+}
+
+.aside-section-second .new-chat:last-child {
+    border-bottom: none;
+}
+
+.aside-section-second .new-chat img {
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+
+/* main */
+
+.container main {
+    width: 65%;
+    background-color: rgb(250, 250, 250);
+}
+
+.container main header,
+.container main footer {
+    height: 70px;
+    background-color: rgb(234, 234, 234);
+}
+
+main section {
+    background-image: url(/assets/img/mine.jpg);
+    margin-right: 10px;
+}
+
+
+/* main header */
+
+main header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-left: 1px solid rgba(0, 0, 0, .1);
+}
+
+main header ul li img {
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+main header ul li {
+    list-style: none
+}
+
+main header ul li .fas {
+    margin: 0 10px;
+    font-size: 20px;
+    color: rgb(177, 177, 177);
+}
+
+
+/* main section */
+
+.container main section {
+    height: calc(100% - 140px);
+    /*   display: flex;
+    flex-direction: column;
+    align-items: flex-end; */
+    position: relative;
+    padding: 50px;
+}
+
+
+/* my message */
+
+main section .my-message-first {
+    right: 50px;
+}
+
+main section .my-message-first,
+main section .my-message-second,
+main section .user-message {
+    position: absolute;
+    width: 280px;
+    padding: 15px 5px 0 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(213, 249, 186);
+}
+
+main section .my-message-first p,
+main section .my-message-second p,
+main section .user-message p {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5px;
+}
+
+main section .my-message-first .fas,
+main section .my-message-second .fas,
+main section .user-message .fas {
+    display: none;
+    font-size: 20px;
+    padding: 0 10px 0 10px;
+    color: rgb(177, 177, 177);
+}
+
+main section .my-message-first .time,
+main section .my-message-second .time,
+main section .user-message .time {
+    font-size: 10px;
+    padding-left: 150px;
+    color: rgb(177, 177, 177);
+}
+
+main section .my-message-second {
+    top: 120px;
+    right: 50px;
+}
+
+
+/* user message */
+
+main section .user-message {
+    top: 190px;
+    background-color: white;
+}
+
+
+/* main footer */
+
+footer .list-inline {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+    line-height: 70px;
+}
+
+footer .list-inline li .fas,
+footer .list-inline li .far {
+    font-size: 23px;
+    color: gray;
+}
+
+footer .list-inline input {
+    width: 550px;
+    height: 50px;
+    border: none;
+    padding: 10px;
+}
