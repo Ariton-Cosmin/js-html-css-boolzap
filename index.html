@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="root" class="container">
+
+        <!-- aside-->
+        <aside>
+
+            <!-- aside header -->
+            <header>
+                <ul class="list-inline">
+                    <li>
+                        <img src="assets/img/avatar_io.jpg" alt="avatar_io">
+                    </li>
+                    <li>Nome Utente</li>
+                </ul>
+
+                <!-- aside header icons -->
+                <ul class="list-inline">
+                    <li><i class="fas fa-circle-notch cursor-pointer"></i></li>
+                    <li><i class="fas fa-comment-alt cursor-pointer"></i></li>
+                    <li><i class="fas fa-ellipsis-v cursor-pointer"></i></li>
+                </ul>
+            </header>
+
+            <!-- aside section first -->
+            <section class="aside-section-first">
+
+                <!-- aside section first left -->
+                <div class="left">
+                    <div><i class="fas fa-bell-slash"></i></div>
+                </div>
+
+                <!-- aside section first right -->
+                <div class="right">
+                    <ul>
+                        <li>
+                            <p>Ricevi notifiche di nuovi messaggi</p>
+                        </li>
+                        <li>
+                            <a class="font-w-4" href="#">Attiva notifiche desktop</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- aside nav -->
+            <nav>
+                <div><i class="fas fa-search"></i></div>
+                <input type="text" placeholder="Cerca o inizia una nuova chat">
+            </nav>
+
+            <!-- aside section second -->
+            <section class="aside-section-second">
+                <div class="new-chat cursor-pointer">
+                    <img src="assets/img/avatar_1.jpg" alt="avatar_1">
+                    <p>Michele</p>
+                </div>
+
+                <div class="new-chat cursor-pointer">
+                    <img src="assets/img/avatar_1.jpg" alt="avatar_1">
+                    <p>Michele</p>
+                </div>
+
+                <div class="new-chat cursor-pointer">
+                    <img src="assets/img/avatar_1.jpg" alt="avatar_1">
+                    <p>Michele</p>
+                </div>
+
+                <div class="new-chat cursor-pointer">
+                    <img src="assets/img/avatar_1.jpg" alt="avatar_1">
+                    <p>Michele</p>
+                </div>
+            </section>
+
+        </aside>
+
+        <!-- main -->
+        <main>
+
+            <!-- main header -->
+            <header>
+                <ul class="list-inline">
+                    <li>
+                        <img src="assets/img/avatar_1.jpg" alt="avatar-1">
+                    </li>
+
+                    <li>
+                        <ul>
+                            <li>Michele</li>
+                            <li class="font-w-4">Ultimo accesso oggi alle</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <ul class="list-inline">
+                    <li><i class="fas fa-search cursor-pointer"></i></li>
+                    <li><i class="fas fa-paperclip cursor-pointer"></i></li>
+                    <li><i class="fas fa-ellipsis-v cursor-pointer"></i></li>
+                </ul>
+            </header>
+
+            <!-- main section -->
+            <section>
+                <!-- my message -->
+                <div class="my-message-first">
+                    <p>Hai portato a spasso il cane? <span><i class="fas fa-angle-down cursor-pointer"></i></span></p>
+                    <p class="time">10<span>&sol;</span>01<span>&sol;</span>2020 15<span>&sol;</span>30<span>&sol;</span>55</p>
+                </div>
+
+                <div class="my-message-second">
+                    <p>Ricordati di dargli da mangiare <span><i class="fas fa-angle-down cursor-pointer"></i></span></p>
+                    <p class="time">10<span>&sol;</span>01<span>&sol;</span>2020 15<span>&sol;</span>50<span>&sol;</span>00</p>
+                </div>
+
+                <!-- user message -->
+                <div class="user-message">
+                    <p>Tutto fatto! <span><i class="fas fa-angle-down cursor-pointer"></i></span></p>
+                    <p class="time">10<span>&sol;</span>01<span>&sol;</span>2020 15<span>&sol;</span>50<span>&sol;</span>00</p>
+                </div>
+            </section>
+
+            <!-- main footer -->
+            <footer>
+                <ul class="list-inline">
+                    <li><i class="far fa-smile cursor-pointer"></i></li>
+                    <li><input type="text" placeholder="Scrivi un messaggio"></li>
+                    <li><i class="fas fa-microphone cursor-pointer"></i></li>
+                </ul>
+            </footer>
+
+        </main>
+
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
