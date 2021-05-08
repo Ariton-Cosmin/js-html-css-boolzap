@@ -149,6 +149,7 @@ aside nav input {
     height: calc(100% - 189px);
     margin-right: 10px;
     box-shadow: 2px 0 rgba(0, 0, 0, .1);
+    overflow-y: auto;
 }
 
 .aside-section-second .new-chat {
@@ -221,11 +222,9 @@ main header ul li .fas {
 
 .container main section {
     height: calc(100% - 140px);
-    /*   display: flex;
-    flex-direction: column;
-    align-items: flex-end; */
     position: relative;
     padding: 50px;
+    overflow-y: auto;
 }
 
 
@@ -261,6 +260,12 @@ main section .user-message .fas {
     font-size: 20px;
     padding: 0 10px 0 10px;
     color: rgb(177, 177, 177);
+}
+
+main section .my-message-first:hover .fas,
+main section .my-message-second:hover .fas,
+main section .user-message:hover .fas {
+    display: block;
 }
 
 main section .my-message-first .time,
