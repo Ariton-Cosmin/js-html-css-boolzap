@@ -67,24 +67,10 @@
 
             <!-- aside section second -->
             <section class="aside-section-second">
-                <div class="new-chat cursor-pointer">
-                    <img src="assets/img/avatar_1.jpg" alt="avatar_1">
-                    <p>Michele</p>
-                </div>
+                <div v-for="value in contacts" class="new-chat cursor-pointer">
 
-                <div class="new-chat cursor-pointer">
-                    <img src="assets/img/avatar_1.jpg" alt="avatar_1">
-                    <p>Michele</p>
-                </div>
+                    <img :src="/img/"> {{value.name}}
 
-                <div class="new-chat cursor-pointer">
-                    <img src="assets/img/avatar_1.jpg" alt="avatar_1">
-                    <p>Michele</p>
-                </div>
-
-                <div class="new-chat cursor-pointer">
-                    <img src="assets/img/avatar_1.jpg" alt="avatar_1">
-                    <p>Michele</p>
                 </div>
             </section>
 
