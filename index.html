@@ -25,9 +25,9 @@
             <header>
                 <ul class="list-inline">
                     <li>
-                        <img src="assets/img/avatar_io.jpg" alt="avatar_io">
+                        <img :src="'assets/img/avatar'+ user.avatar + '.jpg'" :alt="user.name">
                     </li>
-                    <li>Nome Utente</li>
+                    <li>{{ user.name }}</li>
                 </ul>
 
                 <!-- aside header icons -->
@@ -67,11 +67,16 @@
 
             <!-- aside section second -->
             <section class="aside-section-second">
-                <div v-for="value in contacts" class="new-chat cursor-pointer">
 
-                    <img :src="/img/"> {{value.name}}
+                <template v-for="(contact, index) in contacts">
+                    <div class="new-chat cursor-pointer @click="contactActive = index">
+                        <img :src="'assets/img/avatar'+ contact.avatar + '.jpg'" :alt="contact.name">
+                        <span>
+                            {{ contact.name }}
+                        </span>
+                    </div>
+                </template>
 
-                </div>
             </section>
 
         </aside>
@@ -83,12 +88,12 @@
             <header>
                 <ul class="list-inline">
                     <li>
-                        <img src="assets/img/avatar_1.jpg" alt="avatar-1">
+                        <img :src="`assets/img/avatar${contacts[contactActive].avatar}.jpg`" alt="">
                     </li>
 
                     <li>
                         <ul>
-                            <li>Michele</li>
+                            <li>{{ contacts[contactActive].name }}</li>
                             <li class="font-w-4">Ultimo accesso oggi alle</li>
                         </ul>
                     </li>
@@ -133,7 +138,8 @@
         </main>
 
     </div>
-
+    <!-- day js -->
+    <script src="https://www.jsdelivr.com/package/npm/dayjs"></script>
     <script src="assets/js/script.js"></script>
 </body>
 
