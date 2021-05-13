@@ -1,6 +1,10 @@
 const app = new Vue({
     el: "#root",
     data: {
+        user: {
+            name: 'nome utente',
+            avatar: '_io'
+        },
 
         contacts: [{
                 name: 'Michele',
@@ -81,7 +85,10 @@ const app = new Vue({
                     }
                 ],
             },
-        ]
+        ],
+
+        contactActive: 0
+
     },
 
     methods: {
