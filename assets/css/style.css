@@ -242,6 +242,7 @@ main section .user-message {
     padding: 15px 5px 0 15px;
     border-radius: 10px;
     margin-bottom: 10px;
+    margin-top: 5px;
     background-color: rgb(213, 249, 186);
 }
 
